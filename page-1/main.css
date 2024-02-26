@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(219, 152, 231);
+    font-family: 'Centrion High';
+}
+
+.image-container img {
+    width: 500px;
+    /* Adjust image width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* css for square animation */
+
+.opacity-affect {
+    background-color: rgb(172, 20, 53);
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+
+}
+
+@font-face {
+    font-family: 'Centrion High';
+    src: url(../assests/Centrion-High.woff2) format(woff2);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a:link {
+    color: rgb(238, 223, 238);
+}
+
+a:visited {
+    color: rgb(237, 205, 237);
+}

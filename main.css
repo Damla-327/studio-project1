@@ -1,0 +1,233 @@
+/* body {
+    background-image:
+        url(https://images.desenio.com/zoom/pp0257_1-39457.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 7000px;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll {
+    background-color: red;
+}
+
+
+.scrolled-to-bottom {
+
+    background-color: #f0f0f0;
+    width: 500px;
+    height: auto;
+}
+
+img {
+    width: 500px;
+    height: auto;
+} */
+
+html {
+    cursor: url("./assests/fruitzy1.png"), auto;
+}
+
+
+
+@font-face {
+    font-family: 'Centrion High';
+    src: url(./assests/Centrion-High.woff2) format(woff2);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+    width: 100%;
+    /* height: 7000px; */
+    /* Adjust this height as per your requirement */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Centrion High';
+    /* Hide horizontal scrollbar */
+    font-size: 20rem;
+    background-color: #b71c3b;
+}
+
+#main-parent {
+    display: flex;
+}
+
+.scroll {
+    background-color: red;
+    /* Add your scroll class styles here */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.stack span {
+    color: rgb(239, 174, 252);
+    /* font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 4rem; */
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.46, .29, 0, 1.24) 1 backwards calc(var(--index) * 120ms), glitch 7s ease infinite 7s alternate-reverse;
+}
+
+.stack span:nth-child(odd) {
+    --glitch-translate: 8px;
+}
+
+.stack span:nth-child(even) {
+    --glitch-translate: -8px;
+}
+
+@keyframes stack {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+        text-shadow: -7px 20px 0 red, 7px -20px 0 blue;
+    }
+
+    ;
+
+    60% {
+        opacity: 0.5;
+        transform: translateX(10%);
+    }
+
+    80% {
+        transform: none;
+        opacity: 1;
+        text-shadow: 7px -20px 0 red, -7px 20px 0 blue;
+    }
+
+    100% {
+        text-shadow: none;
+    }
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: -7px 20px 0 red, 7px -20px 0 blue;
+        transform: translate(var(--glitch-translate));
+    }
+
+    2% {
+        text-shadow: 7px -20px 0 red, -7px 20px 0 blue;
+    }
+
+    4%,
+    100% {
+        text-shadow: none;
+        transform: none;
+    }
+}
+
+
+
+
+/* .image-container:hover {
+    animation: shake infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 8deg;
+    }
+
+    50% {
+        rotate: -8deg;
+    }
+
+    75% {
+        rotate: 8deg;
+    }
+
+    90% {
+        rotate: -8deg;
+    }
+
+} */
+
+.image-container img {
+    width: 500px;
+    /* Adjust image width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* css for square animation */
+
+.opacity-affect {
+    background-color: rgb(202, 180, 223);
+    padding: 40px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.opacity1 {
+    font-size: 20px;
+
+}
+
+@keyframes slidein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.opacity-animation {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+
+}
+
+.paragraph {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+a:link {
+    color: rgb(175, 22, 50);
+    font-size: 50px;
+
+}
+
+a:visited {
+    color: rgb(175, 22, 50);
+}
