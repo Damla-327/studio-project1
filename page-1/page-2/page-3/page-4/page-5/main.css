@@ -48,3 +48,11 @@ a {
     margin: -1;
     color: rgb(228, 159, 228);
 }
+
+#FindTheRythym {
+
+    margin-left: 41%;
+    font-size: 2em;
+    color: rgb(91, 138, 113);
+    /* font-weight: bold; */
+}
