@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(249, 247, 138);
+    background-color: rgb(59, 40, 29);
     font-family: 'Centrion High';
 }
 
@@ -34,9 +34,9 @@ body {
 }
 
 a:link {
-    color: rgb(248, 33, 72);
+    color: rgb(222, 161, 234);
 }
 
 a:visited {
-    color: rgb(198, 36, 79);
+    color: rgb(229, 166, 243);
 }
