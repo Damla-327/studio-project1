@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(231, 166, 237);
+    background-color: rgb(183, 213, 244);
     font-family: 'Centrion High';
 }
 
@@ -13,7 +13,7 @@ body {
 /* css for square animation */
 
 .opacity-affect {
-    background-color: rgb(140, 22, 62);
+    background-color: rgb(215, 148, 53);
     padding: 30px;
     width: 400px;
     height: 400px;
@@ -34,9 +34,9 @@ body {
 }
 
 a:link {
-    color: rgb(214, 227, 162);
+    color: rgb(243, 207, 252);
 }
 
 a:visited {
-    color: rgb(206, 213, 129);
+    color: rgb(241, 196, 253);
 }
